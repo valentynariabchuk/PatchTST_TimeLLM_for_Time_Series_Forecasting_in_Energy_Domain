@@ -1,0 +1,1030 @@
+args: Namespace(is_finetune=1, is_linear_probe=0, dset_finetune='DE', context_points=336, target_points=24, batch_size=128, num_workers=0, scaler='standard', features='M', patch_len=12, stride=12, revin=1, overlapping_windows=True, scaler_type='minmax', if_relu=False, n_layers=3, n_heads=16, d_model=128, d_ff=256, dropout=0.2, head_dropout=0.2, n_epochs_finetune=20, lr=0.0001, pretrained_model='saved_models/DE/masked_patchtst/based_model/patchtst_pretrained_cw336_patch12_stride12_epochs-pretrain100_mask0.4_model1.pth', finetuned_model_id=1, model_type='based_model')
+scaler_type: minmax overlapping_windows: True
+number of patches: 28
+number of model params 488728
+check unmatched_layers: ['backbone.encoder.layers.0.ff.0.weight', 'backbone.encoder.layers.0.ff.0.bias', 'backbone.encoder.layers.0.ff.3.weight', 'backbone.encoder.layers.1.ff.0.weight', 'backbone.encoder.layers.1.ff.0.bias', 'backbone.encoder.layers.1.ff.3.weight', 'backbone.encoder.layers.2.ff.0.weight', 'backbone.encoder.layers.2.ff.0.bias', 'backbone.encoder.layers.2.ff.3.weight']
+suggested_lr 9.770099572992256e-05
+end-to-end finetuning
+scaler_type: minmax overlapping_windows: True
+number of patches: 28
+number of model params 488728
+check unmatched_layers: ['backbone.encoder.layers.0.ff.0.weight', 'backbone.encoder.layers.0.ff.0.bias', 'backbone.encoder.layers.0.ff.3.weight', 'backbone.encoder.layers.1.ff.0.weight', 'backbone.encoder.layers.1.ff.0.bias', 'backbone.encoder.layers.1.ff.3.weight', 'backbone.encoder.layers.2.ff.0.weight', 'backbone.encoder.layers.2.ff.0.bias', 'backbone.encoder.layers.2.ff.3.weight']
+Finetune the head
+          epoch     train_loss     valid_loss           time
+Better model found at epoch 0 with valid_loss value: 0.03092272020486921.
+              0       0.039472       0.030923          00:02
+Better model found at epoch 1 with valid_loss value: 0.023792003615024832.
+              1       0.025484       0.023792          00:02
+Better model found at epoch 2 with valid_loss value: 0.021643292698730547.
+              2       0.020664       0.021643          00:02
+Better model found at epoch 3 with valid_loss value: 0.02083842286884123.
+              3       0.018426       0.020838          00:02
+Better model found at epoch 4 with valid_loss value: 0.020676766098437247.
+              4       0.017183       0.020677          00:02
+Better model found at epoch 5 with valid_loss value: 0.020356898486508766.
+              5       0.016463       0.020357          00:02
+Better model found at epoch 6 with valid_loss value: 0.020289765459673953.
+              6       0.016046       0.020290          00:02
+Better model found at epoch 7 with valid_loss value: 0.020171932608862294.
+              7       0.015827       0.020172          00:02
+              8       0.015709       0.020209          00:02
+              9       0.015663       0.020188          00:02
+Finetune the entire network
+          epoch     train_loss     valid_loss           time
+Better model found at epoch 0 with valid_loss value: 0.020092722877574846.
+              0       0.015626       0.020093          00:06
+Better model found at epoch 1 with valid_loss value: 0.019875505412719787.
+              1       0.015333       0.019876          00:05
+Better model found at epoch 2 with valid_loss value: 0.019599702248182905.
+              2       0.014938       0.019600          00:06
+Better model found at epoch 3 with valid_loss value: 0.019228640257669873.
+              3       0.014489       0.019229          00:06
+Better model found at epoch 4 with valid_loss value: 0.01914239263388818.
+              4       0.014066       0.019142          00:06
+Better model found at epoch 5 with valid_loss value: 0.01896550898117058.
+              5       0.013679       0.018966          00:06
+Better model found at epoch 6 with valid_loss value: 0.018943030676581728.
+              6       0.013407       0.018943          00:06
+Better model found at epoch 7 with valid_loss value: 0.01887471832722085.
+              7       0.013208       0.018875          00:06
+              8       0.013054       0.018880          00:06
+Better model found at epoch 9 with valid_loss value: 0.01854444911515615.
+              9       0.012914       0.018544          00:06
+             10       0.012793       0.018659          00:05
+             11       0.012716       0.018545          00:06
+             12       0.012614       0.018612          00:06
+Better model found at epoch 13 with valid_loss value: 0.018538920657320653.
+             13       0.012553       0.018539          00:07
+             14       0.012521       0.018540          00:06
+             15       0.012456       0.018568          00:07
+Better model found at epoch 16 with valid_loss value: 0.018523600509125684.
+             16       0.012460       0.018524          00:06
+             17       0.012426       0.018537          00:07
+             18       0.012406       0.018544          00:06
+             19       0.012399       0.018541          00:06
+finetune completed
+scaler_type: minmax overlapping_windows: True
+number of patches: 28
+number of model params 488728
+scores: mse: 0.020822966 rmse: 0.14430165 mae: 0.09215491
+----------- Complete! -----------
+==========Running command for DE, pred_len 96:==========
+args: Namespace(is_finetune=1, is_linear_probe=0, dset_finetune='DE', context_points=512, target_points=96, batch_size=128, num_workers=0, scaler='standard', features='M', patch_len=12, stride=12, revin=1, overlapping_windows=True, scaler_type='minmax', if_relu=False, n_layers=3, n_heads=16, d_model=128, d_ff=256, dropout=0.2, head_dropout=0.2, n_epochs_finetune=20, lr=0.0001, pretrained_model='saved_models/DE/masked_patchtst/based_model/patchtst_pretrained_cw512_patch12_stride12_epochs-pretrain100_mask0.4_model1.pth', finetuned_model_id=1, model_type='based_model')
+scaler_type: minmax overlapping_windows: True
+number of patches: 42
+number of model params 920672
+check unmatched_layers: ['backbone.encoder.layers.0.ff.0.weight', 'backbone.encoder.layers.0.ff.0.bias', 'backbone.encoder.layers.0.ff.3.weight', 'backbone.encoder.layers.1.ff.0.weight', 'backbone.encoder.layers.1.ff.0.bias', 'backbone.encoder.layers.1.ff.3.weight', 'backbone.encoder.layers.2.ff.0.weight', 'backbone.encoder.layers.2.ff.0.bias', 'backbone.encoder.layers.2.ff.3.weight']
+suggested_lr 5.590810182512223e-05
+end-to-end finetuning
+scaler_type: minmax overlapping_windows: True
+number of patches: 42
+number of model params 920672
+check unmatched_layers: ['backbone.encoder.layers.0.ff.0.weight', 'backbone.encoder.layers.0.ff.0.bias', 'backbone.encoder.layers.0.ff.3.weight', 'backbone.encoder.layers.1.ff.0.weight', 'backbone.encoder.layers.1.ff.0.bias', 'backbone.encoder.layers.1.ff.3.weight', 'backbone.encoder.layers.2.ff.0.weight', 'backbone.encoder.layers.2.ff.0.bias', 'backbone.encoder.layers.2.ff.3.weight']
+Finetune the head
+          epoch     train_loss     valid_loss           time
+Better model found at epoch 0 with valid_loss value: 0.03578039034291726.
+              0       0.043353       0.035780          00:02
+Better model found at epoch 1 with valid_loss value: 0.03259793584961732.
+              1       0.032432       0.032598          00:02
+Better model found at epoch 2 with valid_loss value: 0.031274791497152156.
+              2       0.029266       0.031275          00:02
+Better model found at epoch 3 with valid_loss value: 0.030628645720765103.
+              3       0.027474       0.030629          00:02
+Better model found at epoch 4 with valid_loss value: 0.030274994417940144.
+              4       0.026395       0.030275          00:02
+Better model found at epoch 5 with valid_loss value: 0.030152360436584622.
+              5       0.025669       0.030152          00:02
+Better model found at epoch 6 with valid_loss value: 0.030009536184461453.
+              6       0.025193       0.030010          00:02
+              7       0.024918       0.030074          00:02
+Better model found at epoch 8 with valid_loss value: 0.02999599819943806.
+              8       0.024776       0.029996          00:02
+              9       0.024720       0.030009          00:02
+Finetune the entire network
+          epoch     train_loss     valid_loss           time
+              0       0.024693       0.030017          00:06
+              1       0.024550       0.030030          00:06
+Better model found at epoch 2 with valid_loss value: 0.029882052664450265.
+              2       0.024284       0.029882          00:06
+Better model found at epoch 3 with valid_loss value: 0.029726718440106284.
+              3       0.023917       0.029727          00:07
+Better model found at epoch 4 with valid_loss value: 0.029568133808132883.
+              4       0.023534       0.029568          00:07
+Better model found at epoch 5 with valid_loss value: 0.029421718960568805.
+              5       0.023111       0.029422          00:07
+Better model found at epoch 6 with valid_loss value: 0.029356174453474625.
+              6       0.022709       0.029356          00:07
+              7       0.022342       0.029491          00:07
+              8       0.022054       0.029464          00:07
+              9       0.021799       0.029426          00:07
+             10       0.021548       0.029503          00:07
+             11       0.021355       0.029586          00:07
+             12       0.021223       0.029513          00:07
+             13       0.021107       0.029671          00:07
+             14       0.021003       0.029616          00:07
+             15       0.020895       0.029731          00:07
+             16       0.020842       0.029731          00:07
+             17       0.020810       0.029720          00:07
+             18       0.020801       0.029734          00:07
+             19       0.020788       0.029736          00:07
+finetune completed
+scaler_type: minmax overlapping_windows: True
+number of patches: 42
+number of model params 920672
+scores: mse: 0.035156 rmse: 0.18749933 mae: 0.13024187
+----------- Complete! -----------
+==========Running command for DE, pred_len 168:==========
+args: Namespace(is_finetune=1, is_linear_probe=0, dset_finetune='DE', context_points=512, target_points=168, batch_size=128, num_workers=0, scaler='standard', features='M', patch_len=12, stride=12, revin=1, overlapping_windows=True, scaler_type='minmax', if_relu=False, n_layers=3, n_heads=16, d_model=128, d_ff=256, dropout=0.2, head_dropout=0.2, n_epochs_finetune=20, lr=0.0001, pretrained_model='saved_models/DE/masked_patchtst/based_model/patchtst_pretrained_cw512_patch12_stride12_epochs-pretrain100_mask0.4_model1.pth', finetuned_model_id=1, model_type='based_model')
+scaler_type: minmax overlapping_windows: True
+number of patches: 42
+number of model params 1307816
+check unmatched_layers: ['backbone.encoder.layers.0.ff.0.weight', 'backbone.encoder.layers.0.ff.0.bias', 'backbone.encoder.layers.0.ff.3.weight', 'backbone.encoder.layers.1.ff.0.weight', 'backbone.encoder.layers.1.ff.0.bias', 'backbone.encoder.layers.1.ff.3.weight', 'backbone.encoder.layers.2.ff.0.weight', 'backbone.encoder.layers.2.ff.0.bias', 'backbone.encoder.layers.2.ff.3.weight']
+suggested_lr 0.00017073526474706903
+end-to-end finetuning
+scaler_type: minmax overlapping_windows: True
+number of patches: 42
+number of model params 1307816
+check unmatched_layers: ['backbone.encoder.layers.0.ff.0.weight', 'backbone.encoder.layers.0.ff.0.bias', 'backbone.encoder.layers.0.ff.3.weight', 'backbone.encoder.layers.1.ff.0.weight', 'backbone.encoder.layers.1.ff.0.bias', 'backbone.encoder.layers.1.ff.3.weight', 'backbone.encoder.layers.2.ff.0.weight', 'backbone.encoder.layers.2.ff.0.bias', 'backbone.encoder.layers.2.ff.3.weight']
+Finetune the head
+          epoch     train_loss     valid_loss           time
+Better model found at epoch 0 with valid_loss value: 0.0343169336870163.
+              0       0.039100       0.034317          00:02
+Better model found at epoch 1 with valid_loss value: 0.03229536901053459.
+              1       0.031386       0.032295          00:02
+Better model found at epoch 2 with valid_loss value: 0.03183638423352467.
+              2       0.028486       0.031836          00:02
+Better model found at epoch 3 with valid_loss value: 0.03161098983365151.
+              3       0.026805       0.031611          00:02
+Better model found at epoch 4 with valid_loss value: 0.03133201002387617.
+              4       0.025975       0.031332          00:02
+Better model found at epoch 5 with valid_loss value: 0.03132954017542427.
+              5       0.025554       0.031330          00:02
+Better model found at epoch 6 with valid_loss value: 0.031307809026634284.
+              6       0.025275       0.031308          00:02
+Better model found at epoch 7 with valid_loss value: 0.031188494994654876.
+              7       0.025107       0.031188          00:02
+Better model found at epoch 8 with valid_loss value: 0.031148582947189404.
+              8       0.025001       0.031149          00:02
+              9       0.024951       0.031161          00:02
+Finetune the entire network
+          epoch     train_loss     valid_loss           time
+Better model found at epoch 0 with valid_loss value: 0.031127228682700323.
+              0       0.024885       0.031127          00:07
+Better model found at epoch 1 with valid_loss value: 0.031029075447935536.
+              1       0.024715       0.031029          00:07
+              2       0.024447       0.031043          00:07
+              3       0.024041       0.031308          00:07
+              4       0.023543       0.031573          00:07
+              5       0.023015       0.031718          00:07
+              6       0.022396       0.032169          00:07
+              7       0.021793       0.032626          00:07
+              8       0.021228       0.032872          00:07
+              9       0.020665       0.033318          00:07
+             10       0.020250       0.033239          00:07
+             11       0.019854       0.033545          00:07
+             12       0.019538       0.033898          00:07
+             13       0.019279       0.033884          00:07
+             14       0.019119       0.033756          00:07
+             15       0.018949       0.033916          00:07
+             16       0.018826       0.033955          00:07
+             17       0.018778       0.033997          00:07
+             18       0.018702       0.033958          00:07
+             19       0.018704       0.034007          00:07
+finetune completed
+scaler_type: minmax overlapping_windows: True
+number of patches: 42
+number of model params 1307816
+scores: mse: 0.03699426 rmse: 0.19233891 mae: 0.13587674
+----------- Complete! -----------
+==========Running command for GB, pred_len 24:==========
+args: Namespace(is_finetune=1, is_linear_probe=0, dset_finetune='GB', context_points=512, target_points=24, batch_size=128, num_workers=0, scaler='standard', features='M', patch_len=12, stride=12, revin=1, overlapping_windows=True, scaler_type='minmax', if_relu=False, n_layers=3, n_heads=16, d_model=128, d_ff=256, dropout=0.2, head_dropout=0.2, n_epochs_finetune=20, lr=0.0001, pretrained_model='saved_models/GB/masked_patchtst/based_model/patchtst_pretrained_cw512_patch12_stride12_epochs-pretrain100_mask0.4_model1.pth', finetuned_model_id=1, model_type='based_model')
+scaler_type: minmax overlapping_windows: True
+number of patches: 42
+number of model params 533528
+check unmatched_layers: ['backbone.encoder.layers.0.ff.0.weight', 'backbone.encoder.layers.0.ff.0.bias', 'backbone.encoder.layers.0.ff.3.weight', 'backbone.encoder.layers.1.ff.0.weight', 'backbone.encoder.layers.1.ff.0.bias', 'backbone.encoder.layers.1.ff.3.weight', 'backbone.encoder.layers.2.ff.0.weight', 'backbone.encoder.layers.2.ff.0.bias', 'backbone.encoder.layers.2.ff.3.weight']
+suggested_lr 0.00011768119524349978
+end-to-end finetuning
+scaler_type: minmax overlapping_windows: True
+number of patches: 42
+number of model params 533528
+check unmatched_layers: ['backbone.encoder.layers.0.ff.0.weight', 'backbone.encoder.layers.0.ff.0.bias', 'backbone.encoder.layers.0.ff.3.weight', 'backbone.encoder.layers.1.ff.0.weight', 'backbone.encoder.layers.1.ff.0.bias', 'backbone.encoder.layers.1.ff.3.weight', 'backbone.encoder.layers.2.ff.0.weight', 'backbone.encoder.layers.2.ff.0.bias', 'backbone.encoder.layers.2.ff.3.weight']
+Finetune the head
+          epoch     train_loss     valid_loss           time
+Better model found at epoch 0 with valid_loss value: 0.028018558103976497.
+              0       0.031644       0.028019          00:02
+Better model found at epoch 1 with valid_loss value: 0.022381423427415503.
+              1       0.021901       0.022381          00:02
+Better model found at epoch 2 with valid_loss value: 0.02055086084015791.
+              2       0.018089       0.020551          00:02
+Better model found at epoch 3 with valid_loss value: 0.020041582495026865.
+              3       0.016292       0.020042          00:02
+Better model found at epoch 4 with valid_loss value: 0.019922853800881154.
+              4       0.015407       0.019923          00:02
+Better model found at epoch 5 with valid_loss value: 0.01980602723984199.
+              5       0.014909       0.019806          00:02
+Better model found at epoch 6 with valid_loss value: 0.019678747536995337.
+              6       0.014635       0.019679          00:02
+Better model found at epoch 7 with valid_loss value: 0.019645525248311084.
+              7       0.014455       0.019646          00:02
+Better model found at epoch 8 with valid_loss value: 0.019583418761608167.
+              8       0.014368       0.019583          00:02
+Better model found at epoch 9 with valid_loss value: 0.01957616733933293.
+              9       0.014306       0.019576          00:02
+Finetune the entire network
+          epoch     train_loss     valid_loss           time
+Better model found at epoch 0 with valid_loss value: 0.019468342163027032.
+              0       0.014252       0.019468          00:06
+Better model found at epoch 1 with valid_loss value: 0.019324324916025364.
+              1       0.014119       0.019324          00:06
+Better model found at epoch 2 with valid_loss value: 0.01922116057942185.
+              2       0.013917       0.019221          00:07
+Better model found at epoch 3 with valid_loss value: 0.019089861853398445.
+              3       0.013674       0.019090          00:06
+Better model found at epoch 4 with valid_loss value: 0.018976240693439485.
+              4       0.013446       0.018976          00:06
+              5       0.013246       0.019050          00:07
+Better model found at epoch 6 with valid_loss value: 0.018955296367162366.
+              6       0.013026       0.018955          00:07
+Better model found at epoch 7 with valid_loss value: 0.01887748930564317.
+              7       0.012814       0.018877          00:07
+Better model found at epoch 8 with valid_loss value: 0.018870131118477435.
+              8       0.012695       0.018870          00:07
+              9       0.012565       0.018899          00:07
+Better model found at epoch 10 with valid_loss value: 0.01886753317280868.
+             10       0.012428       0.018868          00:07
+             11       0.012342       0.018965          00:07
+             12       0.012257       0.018873          00:07
+             13       0.012150       0.018925          00:07
+             14       0.012078       0.018953          00:07
+             15       0.012024       0.018973          00:07
+             16       0.012001       0.018951          00:07
+             17       0.011982       0.018942          00:07
+             18       0.011961       0.018942          00:07
+             19       0.011954       0.018951          00:07
+finetune completed
+scaler_type: minmax overlapping_windows: True
+number of patches: 42
+number of model params 533528
+scores: mse: 0.024802143 rmse: 0.15748696 mae: 0.10473152
+----------- Complete! -----------
+==========Running command for GB, pred_len 96:==========
+args: Namespace(is_finetune=1, is_linear_probe=0, dset_finetune='GB', context_points=512, target_points=96, batch_size=128, num_workers=0, scaler='standard', features='M', patch_len=12, stride=12, revin=1, overlapping_windows=True, scaler_type='minmax', if_relu=False, n_layers=3, n_heads=16, d_model=128, d_ff=256, dropout=0.2, head_dropout=0.2, n_epochs_finetune=20, lr=0.0001, pretrained_model='saved_models/GB/masked_patchtst/based_model/patchtst_pretrained_cw512_patch12_stride12_epochs-pretrain100_mask0.4_model1.pth', finetuned_model_id=1, model_type='based_model')
+scaler_type: minmax overlapping_windows: True
+number of patches: 42
+number of model params 920672
+check unmatched_layers: ['backbone.encoder.layers.0.ff.0.weight', 'backbone.encoder.layers.0.ff.0.bias', 'backbone.encoder.layers.0.ff.3.weight', 'backbone.encoder.layers.1.ff.0.weight', 'backbone.encoder.layers.1.ff.0.bias', 'backbone.encoder.layers.1.ff.3.weight', 'backbone.encoder.layers.2.ff.0.weight', 'backbone.encoder.layers.2.ff.0.bias', 'backbone.encoder.layers.2.ff.3.weight']
+suggested_lr 0.00011768119524349978
+end-to-end finetuning
+scaler_type: minmax overlapping_windows: True
+number of patches: 42
+number of model params 920672
+check unmatched_layers: ['backbone.encoder.layers.0.ff.0.weight', 'backbone.encoder.layers.0.ff.0.bias', 'backbone.encoder.layers.0.ff.3.weight', 'backbone.encoder.layers.1.ff.0.weight', 'backbone.encoder.layers.1.ff.0.bias', 'backbone.encoder.layers.1.ff.3.weight', 'backbone.encoder.layers.2.ff.0.weight', 'backbone.encoder.layers.2.ff.0.bias', 'backbone.encoder.layers.2.ff.3.weight']
+Finetune the head
+          epoch     train_loss     valid_loss           time
+Better model found at epoch 0 with valid_loss value: 0.0316469445473009.
+              0       0.033109       0.031647          00:02
+Better model found at epoch 1 with valid_loss value: 0.029575565794408565.
+              1       0.026934       0.029576          00:02
+Better model found at epoch 2 with valid_loss value: 0.02868743226041243.
+              2       0.024616       0.028687          00:02
+Better model found at epoch 3 with valid_loss value: 0.0283935546875.
+              3       0.023220       0.028394          00:02
+Better model found at epoch 4 with valid_loss value: 0.02832803004538751.
+              4       0.022439       0.028328          00:02
+              5       0.021950       0.028358          00:02
+Better model found at epoch 6 with valid_loss value: 0.02830214349111956.
+              6       0.021683       0.028302          00:02
+Better model found at epoch 7 with valid_loss value: 0.02814770319095174.
+              7       0.021522       0.028148          00:02
+              8       0.021380       0.028180          00:02
+              9       0.021341       0.028150          00:02
+Finetune the entire network
+          epoch     train_loss     valid_loss           time
+Better model found at epoch 0 with valid_loss value: 0.02813616660283386.
+              0       0.021368       0.028136          00:07
+              1       0.021268       0.028149          00:06
+              2       0.021087       0.028207          00:06
+              3       0.020862       0.028320          00:06
+              4       0.020602       0.028527          00:06
+              5       0.020306       0.028516          00:06
+              6       0.020009       0.028769          00:06
+              7       0.019651       0.028939          00:06
+              8       0.019349       0.029309          00:06
+              9       0.019003       0.029342          00:07
+             10       0.018677       0.029534          00:07
+             11       0.018394       0.029552          00:07
+             12       0.018154       0.029364          00:07
+             13       0.017963       0.029618          00:07
+             14       0.017846       0.029732          00:07
+             15       0.017717       0.029602          00:07
+             16       0.017629       0.029634          00:07
+             17       0.017569       0.029626          00:07
+             18       0.017563       0.029613          00:07
+             19       0.017549       0.029613          00:07
+finetune completed
+scaler_type: minmax overlapping_windows: True
+number of patches: 42
+number of model params 920672
+scores: mse: 0.04018368 rmse: 0.20045868 mae: 0.14173558
+----------- Complete! -----------
+==========Running command for GB, pred_len 168:==========
+args: Namespace(is_finetune=1, is_linear_probe=0, dset_finetune='GB', context_points=512, target_points=168, batch_size=128, num_workers=0, scaler='standard', features='M', patch_len=12, stride=12, revin=1, overlapping_windows=True, scaler_type='minmax', if_relu=False, n_layers=3, n_heads=16, d_model=128, d_ff=256, dropout=0.2, head_dropout=0.2, n_epochs_finetune=20, lr=0.0001, pretrained_model='saved_models/GB/masked_patchtst/based_model/patchtst_pretrained_cw512_patch12_stride12_epochs-pretrain100_mask0.4_model1.pth', finetuned_model_id=1, model_type='based_model')
+scaler_type: minmax overlapping_windows: True
+number of patches: 42
+number of model params 1307816
+check unmatched_layers: ['backbone.encoder.layers.0.ff.0.weight', 'backbone.encoder.layers.0.ff.0.bias', 'backbone.encoder.layers.0.ff.3.weight', 'backbone.encoder.layers.1.ff.0.weight', 'backbone.encoder.layers.1.ff.0.bias', 'backbone.encoder.layers.1.ff.3.weight', 'backbone.encoder.layers.2.ff.0.weight', 'backbone.encoder.layers.2.ff.0.bias', 'backbone.encoder.layers.2.ff.3.weight']
+suggested_lr 9.770099572992256e-05
+end-to-end finetuning
+scaler_type: minmax overlapping_windows: True
+number of patches: 42
+number of model params 1307816
+check unmatched_layers: ['backbone.encoder.layers.0.ff.0.weight', 'backbone.encoder.layers.0.ff.0.bias', 'backbone.encoder.layers.0.ff.3.weight', 'backbone.encoder.layers.1.ff.0.weight', 'backbone.encoder.layers.1.ff.0.bias', 'backbone.encoder.layers.1.ff.3.weight', 'backbone.encoder.layers.2.ff.0.weight', 'backbone.encoder.layers.2.ff.0.bias', 'backbone.encoder.layers.2.ff.3.weight']
+Finetune the head
+          epoch     train_loss     valid_loss           time
+Better model found at epoch 0 with valid_loss value: 0.03278007990992405.
+              0       0.034018       0.032780          00:02
+Better model found at epoch 1 with valid_loss value: 0.03101884429544706.
+              1       0.028357       0.031019          00:02
+Better model found at epoch 2 with valid_loss value: 0.030454053019802044.
+              2       0.026423       0.030454          00:02
+Better model found at epoch 3 with valid_loss value: 0.03037116862434778.
+              3       0.025144       0.030371          00:02
+Better model found at epoch 4 with valid_loss value: 0.030067950128900463.
+              4       0.024312       0.030068          00:02
+Better model found at epoch 5 with valid_loss value: 0.030064296863743723.
+              5       0.023826       0.030064          00:02
+Better model found at epoch 6 with valid_loss value: 0.02997659337436193.
+              6       0.023471       0.029977          00:02
+Better model found at epoch 7 with valid_loss value: 0.02995635217484151.
+              7       0.023274       0.029956          00:02
+Better model found at epoch 8 with valid_loss value: 0.02991001048120266.
+              8       0.023169       0.029910          00:02
+Better model found at epoch 9 with valid_loss value: 0.029909364752767113.
+              9       0.023122       0.029909          00:02
+Finetune the entire network
+          epoch     train_loss     valid_loss           time
+Better model found at epoch 0 with valid_loss value: 0.029909146159872592.
+              0       0.023082       0.029909          00:07
+              1       0.022998       0.029948          00:07
+              2       0.022815       0.029955          00:07
+              3       0.022558       0.030198          00:07
+              4       0.022264       0.030376          00:07
+              5       0.021938       0.030514          00:07
+              6       0.021595       0.030727          00:07
+              7       0.021243       0.030900          00:07
+              8       0.020886       0.030996          00:07
+              9       0.020531       0.031160          00:07
+             10       0.020224       0.031397          00:07
+             11       0.019928       0.031469          00:07
+             12       0.019713       0.031515          00:07
+             13       0.019501       0.031571          00:07
+             14       0.019350       0.031555          00:07
+             15       0.019248       0.031594          00:07
+             16       0.019187       0.031590          00:07
+             17       0.019126       0.031676          00:07
+             18       0.019109       0.031675          00:07
+             19       0.019103       0.031681          00:07
+finetune completed
+scaler_type: minmax overlapping_windows: True
+number of patches: 42
+number of model params 1307816
+scores: mse: 0.042731274 rmse: 0.20671543 mae: 0.14780371
+----------- Complete! -----------
+==========Running command for ES, pred_len 24:==========
+args: Namespace(is_finetune=1, is_linear_probe=0, dset_finetune='ES', context_points=336, target_points=24, batch_size=128, num_workers=0, scaler='standard', features='M', patch_len=12, stride=12, revin=1, overlapping_windows=True, scaler_type='minmax', if_relu=False, n_layers=3, n_heads=16, d_model=128, d_ff=256, dropout=0.2, head_dropout=0.2, n_epochs_finetune=20, lr=0.0001, pretrained_model='saved_models/ES/masked_patchtst/based_model/patchtst_pretrained_cw336_patch12_stride12_epochs-pretrain100_mask0.4_model1.pth', finetuned_model_id=1, model_type='based_model')
+scaler_type: minmax overlapping_windows: True
+number of patches: 28
+number of model params 488728
+check unmatched_layers: ['backbone.encoder.layers.0.ff.0.weight', 'backbone.encoder.layers.0.ff.0.bias', 'backbone.encoder.layers.0.ff.3.weight', 'backbone.encoder.layers.1.ff.0.weight', 'backbone.encoder.layers.1.ff.0.bias', 'backbone.encoder.layers.1.ff.3.weight', 'backbone.encoder.layers.2.ff.0.weight', 'backbone.encoder.layers.2.ff.0.bias', 'backbone.encoder.layers.2.ff.3.weight']
+suggested_lr 0.00014174741629268049
+end-to-end finetuning
+scaler_type: minmax overlapping_windows: True
+number of patches: 28
+number of model params 488728
+check unmatched_layers: ['backbone.encoder.layers.0.ff.0.weight', 'backbone.encoder.layers.0.ff.0.bias', 'backbone.encoder.layers.0.ff.3.weight', 'backbone.encoder.layers.1.ff.0.weight', 'backbone.encoder.layers.1.ff.0.bias', 'backbone.encoder.layers.1.ff.3.weight', 'backbone.encoder.layers.2.ff.0.weight', 'backbone.encoder.layers.2.ff.0.bias', 'backbone.encoder.layers.2.ff.3.weight']
+Finetune the head
+          epoch     train_loss     valid_loss           time
+Better model found at epoch 0 with valid_loss value: 0.016746190883961065.
+              0       0.036312       0.016746          00:01
+Better model found at epoch 1 with valid_loss value: 0.01200184017510895.
+              1       0.020628       0.012002          00:01
+Better model found at epoch 2 with valid_loss value: 0.010468026305848003.
+              2       0.015950       0.010468          00:01
+Better model found at epoch 3 with valid_loss value: 0.009754366826374507.
+              3       0.013257       0.009754          00:01
+Better model found at epoch 4 with valid_loss value: 0.00953281679317578.
+              4       0.011884       0.009533          00:01
+Better model found at epoch 5 with valid_loss value: 0.009410927490116565.
+              5       0.011112       0.009411          00:01
+Better model found at epoch 6 with valid_loss value: 0.009292007969068872.
+              6       0.010726       0.009292          00:01
+Better model found at epoch 7 with valid_loss value: 0.009248708670059162.
+              7       0.010469       0.009249          00:01
+Better model found at epoch 8 with valid_loss value: 0.009230194165427833.
+              8       0.010361       0.009230          00:01
+Better model found at epoch 9 with valid_loss value: 0.009228665095846696.
+              9       0.010341       0.009229          00:01
+Finetune the entire network
+          epoch     train_loss     valid_loss           time
+Better model found at epoch 0 with valid_loss value: 0.00901838366732598.
+              0       0.010175       0.009018          00:06
+Better model found at epoch 1 with valid_loss value: 0.008674185318599393.
+              1       0.009854       0.008674          00:06
+Better model found at epoch 2 with valid_loss value: 0.008378869336345907.
+              2       0.009350       0.008379          00:06
+Better model found at epoch 3 with valid_loss value: 0.008084325251978886.
+              3       0.008849       0.008084          00:05
+Better model found at epoch 4 with valid_loss value: 0.007887946575693097.
+              4       0.008416       0.007888          00:06
+Better model found at epoch 5 with valid_loss value: 0.007766325412042773.
+              5       0.008094       0.007766          00:06
+Better model found at epoch 6 with valid_loss value: 0.00763145313014435.
+              6       0.007814       0.007631          00:06
+              7       0.007665       0.007691          00:06
+              8       0.007537       0.007689          00:06
+Better model found at epoch 9 with valid_loss value: 0.007616794433397401.
+              9       0.007451       0.007617          00:06
+             10       0.007380       0.007632          00:06
+Better model found at epoch 11 with valid_loss value: 0.007551239563449702.
+             11       0.007314       0.007551          00:06
+             12       0.007254       0.007556          00:06
+Better model found at epoch 13 with valid_loss value: 0.007529748527302281.
+             13       0.007223       0.007530          00:06
+             14       0.007172       0.007540          00:06
+             15       0.007130       0.007549          00:06
+             16       0.007153       0.007538          00:06
+Better model found at epoch 17 with valid_loss value: 0.007528777825826615.
+             17       0.007120       0.007529          00:06
+             18       0.007107       0.007535          00:06
+             19       0.007108       0.007533          00:06
+finetune completed
+scaler_type: minmax overlapping_windows: True
+number of patches: 28
+number of model params 488728
+scores: mse: 0.009499148 rmse: 0.09746357 mae: 0.060422607
+----------- Complete! -----------
+==========Running command for ES, pred_len 96:==========
+args: Namespace(is_finetune=1, is_linear_probe=0, dset_finetune='ES', context_points=336, target_points=96, batch_size=128, num_workers=0, scaler='standard', features='M', patch_len=12, stride=12, revin=1, overlapping_windows=True, scaler_type='minmax', if_relu=False, n_layers=3, n_heads=16, d_model=128, d_ff=256, dropout=0.2, head_dropout=0.2, n_epochs_finetune=20, lr=0.0001, pretrained_model='saved_models/ES/masked_patchtst/based_model/patchtst_pretrained_cw336_patch12_stride12_epochs-pretrain100_mask0.4_model1.pth', finetuned_model_id=1, model_type='based_model')
+scaler_type: minmax overlapping_windows: True
+number of patches: 28
+number of model params 746848
+check unmatched_layers: ['backbone.encoder.layers.0.ff.0.weight', 'backbone.encoder.layers.0.ff.0.bias', 'backbone.encoder.layers.0.ff.3.weight', 'backbone.encoder.layers.1.ff.0.weight', 'backbone.encoder.layers.1.ff.0.bias', 'backbone.encoder.layers.1.ff.3.weight', 'backbone.encoder.layers.2.ff.0.weight', 'backbone.encoder.layers.2.ff.0.bias', 'backbone.encoder.layers.2.ff.3.weight']
+suggested_lr 0.00011768119524349978
+end-to-end finetuning
+scaler_type: minmax overlapping_windows: True
+number of patches: 28
+number of model params 746848
+check unmatched_layers: ['backbone.encoder.layers.0.ff.0.weight', 'backbone.encoder.layers.0.ff.0.bias', 'backbone.encoder.layers.0.ff.3.weight', 'backbone.encoder.layers.1.ff.0.weight', 'backbone.encoder.layers.1.ff.0.bias', 'backbone.encoder.layers.1.ff.3.weight', 'backbone.encoder.layers.2.ff.0.weight', 'backbone.encoder.layers.2.ff.0.bias', 'backbone.encoder.layers.2.ff.3.weight']
+Finetune the head
+          epoch     train_loss     valid_loss           time
+Better model found at epoch 0 with valid_loss value: 0.020949321650605167.
+              0       0.039529       0.020949          00:01
+Better model found at epoch 1 with valid_loss value: 0.0178978183581831.
+              1       0.025074       0.017898          00:01
+Better model found at epoch 2 with valid_loss value: 0.01684226027536043.
+              2       0.021730       0.016842          00:01
+Better model found at epoch 3 with valid_loss value: 0.016393997030979837.
+              3       0.019445       0.016394          00:01
+Better model found at epoch 4 with valid_loss value: 0.016159879530805023.
+              4       0.018067       0.016160          00:01
+Better model found at epoch 5 with valid_loss value: 0.01597717136168887.
+              5       0.017238       0.015977          00:01
+Better model found at epoch 6 with valid_loss value: 0.015933773826059042.
+              6       0.016763       0.015934          00:01
+Better model found at epoch 7 with valid_loss value: 0.01587776947642265.
+              7       0.016501       0.015878          00:01
+Better model found at epoch 8 with valid_loss value: 0.015863705069384407.
+              8       0.016373       0.015864          00:01
+Better model found at epoch 9 with valid_loss value: 0.01584299210128598.
+              9       0.016312       0.015843          00:01
+Finetune the entire network
+          epoch     train_loss     valid_loss           time
+Better model found at epoch 0 with valid_loss value: 0.01572418461202896.
+              0       0.016258       0.015724          00:07
+Better model found at epoch 1 with valid_loss value: 0.015462806149165353.
+              1       0.015974       0.015463          00:06
+Better model found at epoch 2 with valid_loss value: 0.015128524445051871.
+              2       0.015563       0.015129          00:06
+Better model found at epoch 3 with valid_loss value: 0.014893149243223658.
+              3       0.015083       0.014893          00:06
+Better model found at epoch 4 with valid_loss value: 0.014611409174125305.
+              4       0.014562       0.014611          00:06
+Better model found at epoch 5 with valid_loss value: 0.014504827339538624.
+              5       0.014156       0.014505          00:06
+              6       0.013839       0.014507          00:06
+              7       0.013602       0.014560          00:06
+              8       0.013373       0.014560          00:06
+              9       0.013183       0.014706          00:06
+             10       0.013045       0.014910          00:06
+             11       0.012898       0.014813          00:06
+             12       0.012776       0.014966          00:06
+             13       0.012687       0.014954          00:06
+             14       0.012600       0.014989          00:06
+             15       0.012573       0.015002          00:06
+             16       0.012523       0.014985          00:06
+             17       0.012472       0.014999          00:06
+             18       0.012477       0.015008          00:06
+             19       0.012453       0.014999          00:06
+finetune completed
+scaler_type: minmax overlapping_windows: True
+number of patches: 28
+number of model params 746848
+scores: mse: 0.018078163 rmse: 0.13445505 mae: 0.08884182
+----------- Complete! -----------
+==========Running command for ES, pred_len 168:==========
+args: Namespace(is_finetune=1, is_linear_probe=0, dset_finetune='ES', context_points=336, target_points=168, batch_size=128, num_workers=0, scaler='standard', features='M', patch_len=12, stride=12, revin=1, overlapping_windows=True, scaler_type='minmax', if_relu=False, n_layers=3, n_heads=16, d_model=128, d_ff=256, dropout=0.2, head_dropout=0.2, n_epochs_finetune=20, lr=0.0001, pretrained_model='saved_models/ES/masked_patchtst/based_model/patchtst_pretrained_cw336_patch12_stride12_epochs-pretrain100_mask0.4_model1.pth', finetuned_model_id=1, model_type='based_model')
+scaler_type: minmax overlapping_windows: True
+number of patches: 28
+number of model params 1004968
+check unmatched_layers: ['backbone.encoder.layers.0.ff.0.weight', 'backbone.encoder.layers.0.ff.0.bias', 'backbone.encoder.layers.0.ff.3.weight', 'backbone.encoder.layers.1.ff.0.weight', 'backbone.encoder.layers.1.ff.0.bias', 'backbone.encoder.layers.1.ff.3.weight', 'backbone.encoder.layers.2.ff.0.weight', 'backbone.encoder.layers.2.ff.0.bias', 'backbone.encoder.layers.2.ff.3.weight']
+suggested_lr 9.770099572992256e-05
+end-to-end finetuning
+scaler_type: minmax overlapping_windows: True
+number of patches: 28
+number of model params 1004968
+check unmatched_layers: ['backbone.encoder.layers.0.ff.0.weight', 'backbone.encoder.layers.0.ff.0.bias', 'backbone.encoder.layers.0.ff.3.weight', 'backbone.encoder.layers.1.ff.0.weight', 'backbone.encoder.layers.1.ff.0.bias', 'backbone.encoder.layers.1.ff.3.weight', 'backbone.encoder.layers.2.ff.0.weight', 'backbone.encoder.layers.2.ff.0.bias', 'backbone.encoder.layers.2.ff.3.weight']
+Finetune the head
+          epoch     train_loss     valid_loss           time
+Better model found at epoch 0 with valid_loss value: 0.022712341941759376.
+              0       0.042482       0.022712          00:01
+Better model found at epoch 1 with valid_loss value: 0.019764958467551046.
+              1       0.026825       0.019765          00:01
+Better model found at epoch 2 with valid_loss value: 0.018767086929178074.
+              2       0.023772       0.018767          00:01
+Better model found at epoch 3 with valid_loss value: 0.018315456421159743.
+              3       0.021627       0.018315          00:01
+Better model found at epoch 4 with valid_loss value: 0.018092594683788644.
+              4       0.020195       0.018093          00:01
+Better model found at epoch 5 with valid_loss value: 0.01798749170251523.
+              5       0.019294       0.017987          00:01
+Better model found at epoch 6 with valid_loss value: 0.0179247718734402.
+              6       0.018775       0.017925          00:01
+Better model found at epoch 7 with valid_loss value: 0.017869295760628498.
+              7       0.018456       0.017869          00:01
+Better model found at epoch 8 with valid_loss value: 0.01784578571793826.
+              8       0.018288       0.017846          00:01
+Better model found at epoch 9 with valid_loss value: 0.01784462617057249.
+              9       0.018227       0.017845          00:01
+Finetune the entire network
+          epoch     train_loss     valid_loss           time
+Better model found at epoch 0 with valid_loss value: 0.01776442393505964.
+              0       0.018175       0.017764          00:06
+Better model found at epoch 1 with valid_loss value: 0.017594338562624785.
+              1       0.017928       0.017594          00:06
+Better model found at epoch 2 with valid_loss value: 0.017368267027291006.
+              2       0.017488       0.017368          00:06
+Better model found at epoch 3 with valid_loss value: 0.017107028417840106.
+              3       0.016938       0.017107          00:06
+Better model found at epoch 4 with valid_loss value: 0.017028029699528137.
+              4       0.016425       0.017028          00:06
+              5       0.015994       0.017044          00:06
+Better model found at epoch 6 with valid_loss value: 0.016771130284661616.
+              6       0.015627       0.016771          00:06
+Better model found at epoch 7 with valid_loss value: 0.016672469512371613.
+              7       0.015316       0.016672          00:06
+              8       0.015060       0.016778          00:06
+              9       0.014814       0.016780          00:06
+             10       0.014645       0.016979          00:06
+             11       0.014466       0.016951          00:06
+             12       0.014341       0.017149          00:06
+             13       0.014258       0.017181          00:06
+             14       0.014155       0.017235          00:06
+             15       0.014093       0.017250          00:06
+             16       0.014057       0.017243          00:06
+             17       0.014011       0.017288          00:06
+             18       0.014015       0.017272          00:06
+             19       0.013978       0.017263          00:06
+finetune completed
+scaler_type: minmax overlapping_windows: True
+number of patches: 28
+number of model params 1004968
+scores: mse: 0.020413268 rmse: 0.14287502 mae: 0.09479445
+----------- Complete! -----------
+==========Running command for FR, pred_len 24:==========
+args: Namespace(is_finetune=1, is_linear_probe=0, dset_finetune='FR', context_points=168, target_points=24, batch_size=128, num_workers=0, scaler='standard', features='M', patch_len=12, stride=12, revin=1, overlapping_windows=True, scaler_type='minmax', if_relu=False, n_layers=3, n_heads=16, d_model=128, d_ff=256, dropout=0.2, head_dropout=0.2, n_epochs_finetune=20, lr=0.0001, pretrained_model='saved_models/FR/masked_patchtst/based_model/patchtst_pretrained_cw168_patch12_stride12_epochs-pretrain100_mask0.4_model1.pth', finetuned_model_id=1, model_type='based_model')
+scaler_type: minmax overlapping_windows: True
+number of patches: 14
+number of model params 443928
+check unmatched_layers: ['backbone.encoder.layers.0.ff.0.weight', 'backbone.encoder.layers.0.ff.0.bias', 'backbone.encoder.layers.0.ff.3.weight', 'backbone.encoder.layers.1.ff.0.weight', 'backbone.encoder.layers.1.ff.0.bias', 'backbone.encoder.layers.1.ff.3.weight', 'backbone.encoder.layers.2.ff.0.weight', 'backbone.encoder.layers.2.ff.0.bias', 'backbone.encoder.layers.2.ff.3.weight']
+suggested_lr 0.00017073526474706903
+end-to-end finetuning
+scaler_type: minmax overlapping_windows: True
+number of patches: 14
+number of model params 443928
+check unmatched_layers: ['backbone.encoder.layers.0.ff.0.weight', 'backbone.encoder.layers.0.ff.0.bias', 'backbone.encoder.layers.0.ff.3.weight', 'backbone.encoder.layers.1.ff.0.weight', 'backbone.encoder.layers.1.ff.0.bias', 'backbone.encoder.layers.1.ff.3.weight', 'backbone.encoder.layers.2.ff.0.weight', 'backbone.encoder.layers.2.ff.0.bias', 'backbone.encoder.layers.2.ff.3.weight']
+Finetune the head
+          epoch     train_loss     valid_loss           time
+Better model found at epoch 0 with valid_loss value: 0.015001209560306544.
+              0       0.024206       0.015001          00:01
+Better model found at epoch 1 with valid_loss value: 0.011532127425776851.
+              1       0.012784       0.011532          00:01
+Better model found at epoch 2 with valid_loss value: 0.01027081191817798.
+              2       0.010206       0.010271          00:01
+Better model found at epoch 3 with valid_loss value: 0.009850240470858005.
+              3       0.008857       0.009850          00:01
+Better model found at epoch 4 with valid_loss value: 0.009693059235576344.
+              4       0.008145       0.009693          00:01
+Better model found at epoch 5 with valid_loss value: 0.009583410465853457.
+              5       0.007747       0.009583          00:01
+Better model found at epoch 6 with valid_loss value: 0.009575031876314755.
+              6       0.007521       0.009575          00:01
+Better model found at epoch 7 with valid_loss value: 0.009527748528833806.
+              7       0.007419       0.009528          00:01
+Better model found at epoch 8 with valid_loss value: 0.009504082311440343.
+              8       0.007362       0.009504          00:01
+Better model found at epoch 9 with valid_loss value: 0.009501808341991025.
+              9       0.007345       0.009502          00:01
+Finetune the entire network
+          epoch     train_loss     valid_loss           time
+Better model found at epoch 0 with valid_loss value: 0.009340549792356769.
+              0       0.007282       0.009341          00:07
+Better model found at epoch 1 with valid_loss value: 0.009037474947802522.
+              1       0.007046       0.009037          00:07
+Better model found at epoch 2 with valid_loss value: 0.008834378060102654.
+              2       0.006748       0.008834          00:07
+Better model found at epoch 3 with valid_loss value: 0.008686253432773482.
+              3       0.006473       0.008686          00:07
+Better model found at epoch 4 with valid_loss value: 0.008427959096686756.
+              4       0.006262       0.008428          00:07
+Better model found at epoch 5 with valid_loss value: 0.008373030401300115.
+              5       0.006099       0.008373          00:07
+Better model found at epoch 6 with valid_loss value: 0.008369090531404251.
+              6       0.005909       0.008369          00:06
+Better model found at epoch 7 with valid_loss value: 0.008239671235608387.
+              7       0.005770       0.008240          00:07
+Better model found at epoch 8 with valid_loss value: 0.008237417514672786.
+              8       0.005703       0.008237          00:07
+Better model found at epoch 9 with valid_loss value: 0.008229732283330987.
+              9       0.005607       0.008230          00:06
+Better model found at epoch 10 with valid_loss value: 0.008196233878550622.
+             10       0.005559       0.008196          00:07
+Better model found at epoch 11 with valid_loss value: 0.008124533891486109.
+             11       0.005509       0.008125          00:07
+             12       0.005443       0.008155          00:06
+Better model found at epoch 13 with valid_loss value: 0.008097334615245056.
+             13       0.005413       0.008097          00:07
+Better model found at epoch 14 with valid_loss value: 0.008080917979352857.
+             14       0.005387       0.008081          00:07
+Better model found at epoch 15 with valid_loss value: 0.008079696932616716.
+             15       0.005343       0.008080          00:07
+             16       0.005336       0.008114          00:07
+             17       0.005322       0.008086          00:06
+             18       0.005314       0.008091          00:07
+             19       0.005294       0.008091          00:06
+finetune completed
+scaler_type: minmax overlapping_windows: True
+number of patches: 14
+number of model params 443928
+scores: mse: 0.009687313 rmse: 0.09842415 mae: 0.055723738
+----------- Complete! -----------
+==========Running command for FR, pred_len 96:==========
+args: Namespace(is_finetune=1, is_linear_probe=0, dset_finetune='FR', context_points=168, target_points=96, batch_size=128, num_workers=0, scaler='standard', features='M', patch_len=12, stride=12, revin=1, overlapping_windows=True, scaler_type='minmax', if_relu=False, n_layers=3, n_heads=16, d_model=128, d_ff=256, dropout=0.2, head_dropout=0.2, n_epochs_finetune=20, lr=0.0001, pretrained_model='saved_models/FR/masked_patchtst/based_model/patchtst_pretrained_cw168_patch12_stride12_epochs-pretrain100_mask0.4_model1.pth', finetuned_model_id=1, model_type='based_model')
+scaler_type: minmax overlapping_windows: True
+number of patches: 14
+number of model params 573024
+check unmatched_layers: ['backbone.encoder.layers.0.ff.0.weight', 'backbone.encoder.layers.0.ff.0.bias', 'backbone.encoder.layers.0.ff.3.weight', 'backbone.encoder.layers.1.ff.0.weight', 'backbone.encoder.layers.1.ff.0.bias', 'backbone.encoder.layers.1.ff.3.weight', 'backbone.encoder.layers.2.ff.0.weight', 'backbone.encoder.layers.2.ff.0.bias', 'backbone.encoder.layers.2.ff.3.weight']
+suggested_lr 0.00017073526474706903
+end-to-end finetuning
+scaler_type: minmax overlapping_windows: True
+number of patches: 14
+number of model params 573024
+check unmatched_layers: ['backbone.encoder.layers.0.ff.0.weight', 'backbone.encoder.layers.0.ff.0.bias', 'backbone.encoder.layers.0.ff.3.weight', 'backbone.encoder.layers.1.ff.0.weight', 'backbone.encoder.layers.1.ff.0.bias', 'backbone.encoder.layers.1.ff.3.weight', 'backbone.encoder.layers.2.ff.0.weight', 'backbone.encoder.layers.2.ff.0.bias', 'backbone.encoder.layers.2.ff.3.weight']
+Finetune the head
+          epoch     train_loss     valid_loss           time
+Better model found at epoch 0 with valid_loss value: 0.018165552373626933.
+              0       0.025380       0.018166          00:01
+Better model found at epoch 1 with valid_loss value: 0.016384444457908487.
+              1       0.016511       0.016384          00:01
+Better model found at epoch 2 with valid_loss value: 0.015735638015536006.
+              2       0.014654       0.015736          00:01
+Better model found at epoch 3 with valid_loss value: 0.015580408082345912.
+              3       0.013506       0.015580          00:01
+Better model found at epoch 4 with valid_loss value: 0.015429784341785751.
+              4       0.012838       0.015430          00:01
+Better model found at epoch 5 with valid_loss value: 0.015336987562932261.
+              5       0.012457       0.015337          00:01
+Better model found at epoch 6 with valid_loss value: 0.015299928198023673.
+              6       0.012235       0.015300          00:01
+Better model found at epoch 7 with valid_loss value: 0.015289660485611397.
+              7       0.012127       0.015290          00:01
+Better model found at epoch 8 with valid_loss value: 0.015260501175609616.
+              8       0.012066       0.015261          00:01
+              9       0.012074       0.015263          00:01
+Finetune the entire network
+          epoch     train_loss     valid_loss           time
+Better model found at epoch 0 with valid_loss value: 0.015140742650354073.
+              0       0.012004       0.015141          00:07
+Better model found at epoch 1 with valid_loss value: 0.014784275486374211.
+              1       0.011756       0.014784          00:07
+Better model found at epoch 2 with valid_loss value: 0.014518495688504373.
+              2       0.011370       0.014518          00:07
+Better model found at epoch 3 with valid_loss value: 0.014350146176467784.
+              3       0.011046       0.014350          00:06
+Better model found at epoch 4 with valid_loss value: 0.01413036498526813.
+              4       0.010760       0.014130          00:06
+Better model found at epoch 5 with valid_loss value: 0.014027371262999643.
+              5       0.010507       0.014027          00:07
+Better model found at epoch 6 with valid_loss value: 0.013900512248350412.
+              6       0.010281       0.013901          00:06
+              7       0.010081       0.014058          00:07
+Better model found at epoch 8 with valid_loss value: 0.01387436124151368.
+              8       0.009914       0.013874          00:06
+              9       0.009759       0.013905          00:06
+             10       0.009657       0.013895          00:06
+             11       0.009545       0.014015          00:06
+             12       0.009435       0.014026          00:06
+             13       0.009358       0.014002          00:06
+             14       0.009318       0.014021          00:06
+             15       0.009253       0.013997          00:06
+             16       0.009232       0.014007          00:07
+             17       0.009202       0.014014          00:06
+             18       0.009202       0.014011          00:06
+             19       0.009193       0.014030          00:06
+finetune completed
+scaler_type: minmax overlapping_windows: True
+number of patches: 14
+number of model params 573024
+scores: mse: 0.018661331 rmse: 0.13660648 mae: 0.082016654
+----------- Complete! -----------
+==========Running command for FR, pred_len 168:==========
+args: Namespace(is_finetune=1, is_linear_probe=0, dset_finetune='FR', context_points=168, target_points=168, batch_size=128, num_workers=0, scaler='standard', features='M', patch_len=12, stride=12, revin=1, overlapping_windows=True, scaler_type='minmax', if_relu=False, n_layers=3, n_heads=16, d_model=128, d_ff=256, dropout=0.2, head_dropout=0.2, n_epochs_finetune=20, lr=0.0001, pretrained_model='saved_models/FR/masked_patchtst/based_model/patchtst_pretrained_cw168_patch12_stride12_epochs-pretrain100_mask0.4_model1.pth', finetuned_model_id=1, model_type='based_model')
+scaler_type: minmax overlapping_windows: True
+number of patches: 14
+number of model params 702120
+check unmatched_layers: ['backbone.encoder.layers.0.ff.0.weight', 'backbone.encoder.layers.0.ff.0.bias', 'backbone.encoder.layers.0.ff.3.weight', 'backbone.encoder.layers.1.ff.0.weight', 'backbone.encoder.layers.1.ff.0.bias', 'backbone.encoder.layers.1.ff.3.weight', 'backbone.encoder.layers.2.ff.0.weight', 'backbone.encoder.layers.2.ff.0.bias', 'backbone.encoder.layers.2.ff.3.weight']
+suggested_lr 0.00035938136638046257
+end-to-end finetuning
+scaler_type: minmax overlapping_windows: True
+number of patches: 14
+number of model params 702120
+check unmatched_layers: ['backbone.encoder.layers.0.ff.0.weight', 'backbone.encoder.layers.0.ff.0.bias', 'backbone.encoder.layers.0.ff.3.weight', 'backbone.encoder.layers.1.ff.0.weight', 'backbone.encoder.layers.1.ff.0.bias', 'backbone.encoder.layers.1.ff.3.weight', 'backbone.encoder.layers.2.ff.0.weight', 'backbone.encoder.layers.2.ff.0.bias', 'backbone.encoder.layers.2.ff.3.weight']
+Finetune the head
+          epoch     train_loss     valid_loss           time
+Better model found at epoch 0 with valid_loss value: 0.01860900532172693.
+              0       0.023515       0.018609          00:01
+Better model found at epoch 1 with valid_loss value: 0.017524132555052845.
+              1       0.016829       0.017524          00:01
+Better model found at epoch 2 with valid_loss value: 0.017333852465494685.
+              2       0.015091       0.017334          00:01
+Better model found at epoch 3 with valid_loss value: 0.017202094970180513.
+              3       0.014109       0.017202          00:01
+Better model found at epoch 4 with valid_loss value: 0.017192695475716026.
+              4       0.013752       0.017193          00:01
+Better model found at epoch 5 with valid_loss value: 0.017004868902956733.
+              5       0.013595       0.017005          00:01
+Better model found at epoch 6 with valid_loss value: 0.016952023442565325.
+              6       0.013451       0.016952          00:01
+Better model found at epoch 7 with valid_loss value: 0.016898787278781982.
+              7       0.013401       0.016899          00:01
+Better model found at epoch 8 with valid_loss value: 0.016850264681321912.
+              8       0.013383       0.016850          00:01
+              9       0.013350       0.016863          00:01
+Finetune the entire network
+          epoch     train_loss     valid_loss           time
+Better model found at epoch 0 with valid_loss value: 0.016437805014977283.
+              0       0.013185       0.016438          00:06
+Better model found at epoch 1 with valid_loss value: 0.016018945853203344.
+              1       0.012756       0.016019          00:04
+Better model found at epoch 2 with valid_loss value: 0.01582238184606815.
+              2       0.012413       0.015822          00:05
+Better model found at epoch 3 with valid_loss value: 0.015544599272088675.
+              3       0.012083       0.015545          00:06
+              4       0.011752       0.015559          00:06
+              5       0.011448       0.015560          00:06
+              6       0.011191       0.016483          00:06
+              7       0.011012       0.015807          00:06
+              8       0.010719       0.016036          00:06
+              9       0.010547       0.015773          00:06
+             10       0.010424       0.015664          00:06
+             11       0.010386       0.015836          00:06
+             12       0.010119       0.015752          00:06
+             13       0.010003       0.015801          00:06
+             14       0.009875       0.015877          00:06
+             15       0.009801       0.015836          00:06
+             16       0.009767       0.015870          00:06
+             17       0.009726       0.015894          00:06
+             18       0.009687       0.015965          00:06
+             19       0.009723       0.015850          00:06
+finetune completed
+scaler_type: minmax overlapping_windows: True
+number of patches: 14
+number of model params 702120
+scores: mse: 0.0209026 rmse: 0.14457731 mae: 0.090963185
+----------- Complete! -----------
+==========Running command for IT, pred_len 24:==========
+args: Namespace(is_finetune=1, is_linear_probe=0, dset_finetune='IT', context_points=168, target_points=24, batch_size=128, num_workers=0, scaler='standard', features='M', patch_len=12, stride=12, revin=1, overlapping_windows=True, scaler_type='minmax', if_relu=False, n_layers=3, n_heads=16, d_model=128, d_ff=256, dropout=0.2, head_dropout=0.2, n_epochs_finetune=20, lr=0.0001, pretrained_model='saved_models/IT/masked_patchtst/based_model/patchtst_pretrained_cw168_patch12_stride12_epochs-pretrain100_mask0.4_model1.pth', finetuned_model_id=1, model_type='based_model')
+scaler_type: minmax overlapping_windows: True
+number of patches: 14
+number of model params 443928
+check unmatched_layers: ['backbone.encoder.layers.0.ff.0.weight', 'backbone.encoder.layers.0.ff.0.bias', 'backbone.encoder.layers.0.ff.3.weight', 'backbone.encoder.layers.1.ff.0.weight', 'backbone.encoder.layers.1.ff.0.bias', 'backbone.encoder.layers.1.ff.3.weight', 'backbone.encoder.layers.2.ff.0.weight', 'backbone.encoder.layers.2.ff.0.bias', 'backbone.encoder.layers.2.ff.3.weight']
+suggested_lr 0.00017073526474706903
+end-to-end finetuning
+scaler_type: minmax overlapping_windows: True
+number of patches: 14
+number of model params 443928
+check unmatched_layers: ['backbone.encoder.layers.0.ff.0.weight', 'backbone.encoder.layers.0.ff.0.bias', 'backbone.encoder.layers.0.ff.3.weight', 'backbone.encoder.layers.1.ff.0.weight', 'backbone.encoder.layers.1.ff.0.bias', 'backbone.encoder.layers.1.ff.3.weight', 'backbone.encoder.layers.2.ff.0.weight', 'backbone.encoder.layers.2.ff.0.bias', 'backbone.encoder.layers.2.ff.3.weight']
+Finetune the head
+          epoch     train_loss     valid_loss           time
+Better model found at epoch 0 with valid_loss value: 0.018457126479373594.
+              0       0.046824       0.018457          00:01
+Better model found at epoch 1 with valid_loss value: 0.013382723769785719.
+              1       0.023671       0.013383          00:01
+Better model found at epoch 2 with valid_loss value: 0.01152968165075662.
+              2       0.018309       0.011530          00:01
+Better model found at epoch 3 with valid_loss value: 0.01097184982410251.
+              3       0.015570       0.010972          00:01
+Better model found at epoch 4 with valid_loss value: 0.010712335054870969.
+              4       0.014170       0.010712          00:01
+Better model found at epoch 5 with valid_loss value: 0.010617186675333259.
+              5       0.013426       0.010617          00:01
+Better model found at epoch 6 with valid_loss value: 0.010555363667822353.
+              6       0.012974       0.010555          00:01
+Better model found at epoch 7 with valid_loss value: 0.010534794859435946.
+              7       0.012799       0.010535          00:01
+Better model found at epoch 8 with valid_loss value: 0.01053404750520247.
+              8       0.012694       0.010534          00:01
+Better model found at epoch 9 with valid_loss value: 0.010529149819248759.
+              9       0.012638       0.010529          00:01
+Finetune the entire network
+          epoch     train_loss     valid_loss           time
+Better model found at epoch 0 with valid_loss value: 0.010294136365203587.
+              0       0.012493       0.010294          00:06
+Better model found at epoch 1 with valid_loss value: 0.009954972533296117.
+              1       0.012062       0.009955          00:07
+Better model found at epoch 2 with valid_loss value: 0.009664060909571287.
+              2       0.011498       0.009664          00:06
+Better model found at epoch 3 with valid_loss value: 0.009435071695151965.
+              3       0.010922       0.009435          00:07
+Better model found at epoch 4 with valid_loss value: 0.009256230072517265.
+              4       0.010416       0.009256          00:06
+Better model found at epoch 5 with valid_loss value: 0.00913541639505024.
+              5       0.010029       0.009135          00:07
+Better model found at epoch 6 with valid_loss value: 0.009103372201709401.
+              6       0.009802       0.009103          00:06
+Better model found at epoch 7 with valid_loss value: 0.008979724959504935.
+              7       0.009584       0.008980          00:06
+              8       0.009455       0.009057          00:06
+Better model found at epoch 9 with valid_loss value: 0.008972926367627322.
+              9       0.009366       0.008973          00:06
+Better model found at epoch 10 with valid_loss value: 0.008864810962624847.
+             10       0.009259       0.008865          00:06
+             11       0.009173       0.008924          00:06
+             12       0.009113       0.008899          00:06
+Better model found at epoch 13 with valid_loss value: 0.008860154418061742.
+             13       0.009077       0.008860          00:06
+Better model found at epoch 14 with valid_loss value: 0.00882693765169941.
+             14       0.009046       0.008827          00:06
+             15       0.008978       0.008851          00:06
+             16       0.008955       0.008868          00:07
+             17       0.008923       0.008858          00:07
+             18       0.008925       0.008852          00:06
+             19       0.008924       0.008853          00:06
+finetune completed
+scaler_type: minmax overlapping_windows: True
+number of patches: 14
+number of model params 443928
+scores: mse: 0.009829139 rmse: 0.099142015 mae: 0.05909648
+----------- Complete! -----------
+==========Running command for IT, pred_len 96:==========
+args: Namespace(is_finetune=1, is_linear_probe=0, dset_finetune='IT', context_points=168, target_points=96, batch_size=128, num_workers=0, scaler='standard', features='M', patch_len=12, stride=12, revin=1, overlapping_windows=True, scaler_type='minmax', if_relu=False, n_layers=3, n_heads=16, d_model=128, d_ff=256, dropout=0.2, head_dropout=0.2, n_epochs_finetune=20, lr=0.0001, pretrained_model='saved_models/IT/masked_patchtst/based_model/patchtst_pretrained_cw168_patch12_stride12_epochs-pretrain100_mask0.4_model1.pth', finetuned_model_id=1, model_type='based_model')
+scaler_type: minmax overlapping_windows: True
+number of patches: 14
+number of model params 573024
+check unmatched_layers: ['backbone.encoder.layers.0.ff.0.weight', 'backbone.encoder.layers.0.ff.0.bias', 'backbone.encoder.layers.0.ff.3.weight', 'backbone.encoder.layers.1.ff.0.weight', 'backbone.encoder.layers.1.ff.0.bias', 'backbone.encoder.layers.1.ff.3.weight', 'backbone.encoder.layers.2.ff.0.weight', 'backbone.encoder.layers.2.ff.0.bias', 'backbone.encoder.layers.2.ff.3.weight']
+suggested_lr 0.00020565123083486514
+end-to-end finetuning
+scaler_type: minmax overlapping_windows: True
+number of patches: 14
+number of model params 573024
+check unmatched_layers: ['backbone.encoder.layers.0.ff.0.weight', 'backbone.encoder.layers.0.ff.0.bias', 'backbone.encoder.layers.0.ff.3.weight', 'backbone.encoder.layers.1.ff.0.weight', 'backbone.encoder.layers.1.ff.0.bias', 'backbone.encoder.layers.1.ff.3.weight', 'backbone.encoder.layers.2.ff.0.weight', 'backbone.encoder.layers.2.ff.0.bias', 'backbone.encoder.layers.2.ff.3.weight']
+Finetune the head
+          epoch     train_loss     valid_loss           time
+Better model found at epoch 0 with valid_loss value: 0.021682684629112846.
+              0       0.045315       0.021683          00:01
+Better model found at epoch 1 with valid_loss value: 0.018931251817645826.
+              1       0.028881       0.018931          00:01
+Better model found at epoch 2 with valid_loss value: 0.01792538102028135.
+              2       0.024670       0.017925          00:01
+Better model found at epoch 3 with valid_loss value: 0.017595501892735455.
+              3       0.022252       0.017596          00:01
+Better model found at epoch 4 with valid_loss value: 0.01743300510093.
+              4       0.021090       0.017433          00:01
+Better model found at epoch 5 with valid_loss value: 0.01741074638894363.
+              5       0.020504       0.017411          00:01
+Better model found at epoch 6 with valid_loss value: 0.017343682210749976.
+              6       0.020202       0.017344          00:01
+Better model found at epoch 7 with valid_loss value: 0.017290517311934244.
+              7       0.020057       0.017291          00:01
+Better model found at epoch 8 with valid_loss value: 0.017282435989069492.
+              8       0.019962       0.017282          00:01
+Better model found at epoch 9 with valid_loss value: 0.017280244633276546.
+              9       0.019946       0.017280          00:01
+Finetune the entire network
+          epoch     train_loss     valid_loss           time
+Better model found at epoch 0 with valid_loss value: 0.01704516740617372.
+              0       0.019779       0.017045          00:07
+Better model found at epoch 1 with valid_loss value: 0.016683152946056243.
+              1       0.019251       0.016683          00:06
+Better model found at epoch 2 with valid_loss value: 0.016295194819848455.
+              2       0.018629       0.016295          00:06
+Better model found at epoch 3 with valid_loss value: 0.016121808293391476.
+              3       0.018068       0.016122          00:06
+Better model found at epoch 4 with valid_loss value: 0.015790064340689202.
+              4       0.017576       0.015790          00:07
+Better model found at epoch 5 with valid_loss value: 0.015682938702228692.
+              5       0.017208       0.015683          00:07
+Better model found at epoch 6 with valid_loss value: 0.01561377504378242.
+              6       0.016913       0.015614          00:06
+              7       0.016685       0.015705          00:06
+              8       0.016439       0.015655          00:06
+              9       0.016272       0.015697          00:06
+             10       0.016107       0.015682          00:06
+             11       0.015931       0.015700          00:07
+             12       0.015826       0.015637          00:06
+             13       0.015693       0.015660          00:07
+             14       0.015600       0.015642          00:06
+             15       0.015518       0.015721          00:06
+Better model found at epoch 16 with valid_loss value: 0.015611208736460028.
+             16       0.015469       0.015611          00:06
+             17       0.015441       0.015612          00:06
+Better model found at epoch 18 with valid_loss value: 0.015604640876887968.
+             18       0.015445       0.015605          00:06
+             19       0.015416       0.015618          00:07
+finetune completed
+scaler_type: minmax overlapping_windows: True
+number of patches: 14
+number of model params 573024
+scores: mse: 0.017775299 rmse: 0.13332404 mae: 0.082325324
+----------- Complete! -----------
+==========Running command for IT, pred_len 168:==========
+args: Namespace(is_finetune=1, is_linear_probe=0, dset_finetune='IT', context_points=168, target_points=168, batch_size=128, num_workers=0, scaler='standard', features='M', patch_len=12, stride=12, revin=1, overlapping_windows=True, scaler_type='minmax', if_relu=False, n_layers=3, n_heads=16, d_model=128, d_ff=256, dropout=0.2, head_dropout=0.2, n_epochs_finetune=20, lr=0.0001, pretrained_model='saved_models/IT/masked_patchtst/based_model/patchtst_pretrained_cw168_patch12_stride12_epochs-pretrain100_mask0.4_model1.pth', finetuned_model_id=1, model_type='based_model')
+scaler_type: minmax overlapping_windows: True
+number of patches: 14
+number of model params 702120
+check unmatched_layers: ['backbone.encoder.layers.0.ff.0.weight', 'backbone.encoder.layers.0.ff.0.bias', 'backbone.encoder.layers.0.ff.3.weight', 'backbone.encoder.layers.1.ff.0.weight', 'backbone.encoder.layers.1.ff.0.bias', 'backbone.encoder.layers.1.ff.3.weight', 'backbone.encoder.layers.2.ff.0.weight', 'backbone.encoder.layers.2.ff.0.bias', 'backbone.encoder.layers.2.ff.3.weight']
+suggested_lr 0.00017073526474706903
+end-to-end finetuning
+scaler_type: minmax overlapping_windows: True
+number of patches: 14
+number of model params 702120
+check unmatched_layers: ['backbone.encoder.layers.0.ff.0.weight', 'backbone.encoder.layers.0.ff.0.bias', 'backbone.encoder.layers.0.ff.3.weight', 'backbone.encoder.layers.1.ff.0.weight', 'backbone.encoder.layers.1.ff.0.bias', 'backbone.encoder.layers.1.ff.3.weight', 'backbone.encoder.layers.2.ff.0.weight', 'backbone.encoder.layers.2.ff.0.bias', 'backbone.encoder.layers.2.ff.3.weight']
+Finetune the head
+          epoch     train_loss     valid_loss           time
+Better model found at epoch 0 with valid_loss value: 0.023030226261635776.
+              0       0.048342       0.023030          00:01
+Better model found at epoch 1 with valid_loss value: 0.020475816279134463.
+              1       0.030959       0.020476          00:01
+Better model found at epoch 2 with valid_loss value: 0.019589263800437774.
+              2       0.027175       0.019589          00:01
+Better model found at epoch 3 with valid_loss value: 0.019140932286333335.
+              3       0.024798       0.019141          00:01
+Better model found at epoch 4 with valid_loss value: 0.018950398428012567.
+              4       0.023430       0.018950          00:01
+Better model found at epoch 5 with valid_loss value: 0.018876918552146797.
+              5       0.022662       0.018877          00:01
+Better model found at epoch 6 with valid_loss value: 0.018801978877755535.
+              6       0.022284       0.018802          00:01
+Better model found at epoch 7 with valid_loss value: 0.018798747723015808.
+              7       0.022047       0.018799          00:01
+Better model found at epoch 8 with valid_loss value: 0.01879573893001361.
+              8       0.021918       0.018796          00:01
+Better model found at epoch 9 with valid_loss value: 0.018764699995272364.
+              9       0.021892       0.018765          00:01
+Finetune the entire network
+          epoch     train_loss     valid_loss           time
+Better model found at epoch 0 with valid_loss value: 0.018610065622893468.
+              0       0.021710       0.018610          00:06
+Better model found at epoch 1 with valid_loss value: 0.018358804397168436.
+              1       0.021269       0.018359          00:06
+Better model found at epoch 2 with valid_loss value: 0.01807895272837701.
+              2       0.020698       0.018079          00:07
+Better model found at epoch 3 with valid_loss value: 0.01791740127279557.
+              3       0.020168       0.017917          00:07
+Better model found at epoch 4 with valid_loss value: 0.01775821665062379.
+              4       0.019628       0.017758          00:07
+Better model found at epoch 5 with valid_loss value: 0.01758555464585177.
+              5       0.019276       0.017586          00:06
+Better model found at epoch 6 with valid_loss value: 0.017565250632281204.
+              6       0.018947       0.017565          00:07
+Better model found at epoch 7 with valid_loss value: 0.017424142637461663.
+              7       0.018729       0.017424          00:06
+              8       0.018515       0.017677          00:06
+              9       0.018348       0.017477          00:06
+Better model found at epoch 10 with valid_loss value: 0.017416756961445.
+             10       0.018142       0.017417          00:06
+             11       0.018028       0.017486          00:07
+             12       0.017920       0.017476          00:06
+             13       0.017789       0.017530          00:06
+             14       0.017742       0.017519          00:06
+             15       0.017691       0.017546          00:06
+             16       0.017640       0.017577          00:06
+             17       0.017611       0.017597          00:06
+             18       0.017575       0.017586          00:06
+             19       0.017575       0.017524          00:06
+finetune completed
+scaler_type: minmax overlapping_windows: True
+number of patches: 14
+number of model params 702120
+scores: mse: 0.019134037 rmse: 0.13832584 mae: 0.08790398
+----------- Complete! -----------
+Total time: 00h:45m:03.84s
